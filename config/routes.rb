@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
   root "simulations#new"
+
   post "create_simulation", to: "simulations#create"
-  get "simulation/:id", to: "simulations#show"
-  resources :simulation
+  get "/simulations/:id", to: "simulations#show", as: 'simulation'
   post 'send_email', to: "simulations#send_email"
 end
