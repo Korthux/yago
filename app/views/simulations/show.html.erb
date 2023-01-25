@@ -14,5 +14,5 @@
 
 
 <div>
-  <%= button_to 'Send', send_email_path %>
+  <%= button_to 'Send', send_email_path(simulation_id: @simulation.id), method: 'post' %>
 </div>
