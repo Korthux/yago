@@ -22,7 +22,7 @@ class SimulationsController < ApplicationController
 
   def send_email
     simulation = Simulation.find(params[:simulation_id])
-    SimulationMailer.with(simulation: simulation, domain_name: request.domain).send_simulation_email.deliver_now
+    SimulationMailer.with(simulation: simulation, domain_name: request.host).send_simulation_email.deliver_now
   end
 
   private
