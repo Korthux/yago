@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "simulations#new"
   post "create_simulation", to: "simulations#create"
-  get "simulation", to: "simulations#show"
+  get "simulation/:id", to: "simulations#show"
+  resources :simulation
   post 'send_email', to: "simulations#send_email"
 end

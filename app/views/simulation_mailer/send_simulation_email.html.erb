@@ -6,7 +6,7 @@
 <body>
 <h1>Hey <%= @simulation.first_name %> !</h1>
 <p>Voici le lien vers
-  <a href=<%= @simulation_url %>>votre simulation</a>
+  <%= link_to 'votre simulation', simulation_url(@simulation.id) %>
 </p>
 </body>
 </html>

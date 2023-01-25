@@ -70,7 +70,7 @@ Rails.application.configure do
 
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_options = { from: 'info@opendealz.com' }
+  config.action_mailer.default_options = { from: 'loury.jacob@icloud.com' }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
@@ -82,7 +82,7 @@ Rails.application.configure do
     authentication: 'plain',
     enable_starttls_auto: true
   }
-  config.action_mailer.default_url_options = { host: 'app.opendealz.com' }
+  config.action_mailer.default_url_options = { host: 'yago.herokuapp.com/' }
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
