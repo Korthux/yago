@@ -1,0 +1,61 @@
+<div>
+  <%= form_with model: @simulation, url: create_simulation_path do |f| %>
+
+    <div class="field">
+      <%= f.label :First_Name %><br>
+      <%= f.text_field :first_name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Last_Name %><br>
+      <%= f.text_field :last_name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Phone_Number %><br>
+      <%= f.telephone_field :phone_number %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Address %><br>
+      <%= f.text_field :address %>
+    </div>
+
+    <div class="field">
+      <%= f.label :email %><br>
+      <%= f.email_field :email %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Profession %><br>
+      <%= f.select :profession, options_for_select(["Doctors"]) %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Annual_Revenue %><br>
+      <%= f.number_field :annual_revenue %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Enterprise_number %><br>
+      <%= f.text_field :enterprise_number %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Company_name %><br>
+      <%= f.text_field :legal_name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :natural_person, "Natural Person ?" %>
+      <%= f.radio_button :natural_person, true %>
+      <%= f.label :natural_person, "Yes" %>
+      <%= f.radio_button :natural_person, false %>
+      <%= f.label :natural_person, "No" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "save"%>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,18 @@
+<h1>Hello</h1>
+
+<h3>Voici les couvertures disponibles :</h3>
+<% @result[:cover_premiums].each do |key, value|  %>
+  <p><%= key %> : <%= value %></p>
+<% end %>
+<div>
+  <h3>Nous vous conseillons</h3>
+  <%= @result[:cover_advice] %>
+  <h3>Avec</h3>
+  <p>Coverage Ceiling : <%= @result[:coverage_ceiling] %></p>
+  <p>Deductible : <%= @result[:deductible] %></p>
+</div>
+
+
+<div>
+
+</div>
