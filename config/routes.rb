@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   root "simulations#new"
   post "create_simulation", to: "simulations#create"
   get "simulation", to: "simulations#show"
+  get 'send_email', to: "simulations#send_email"
 end

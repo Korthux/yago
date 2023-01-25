@@ -1,5 +1,5 @@
 class SimulationMailer < ApplicationMailer
-  default from: 'info@opendealz.com'
+  default from: 'loury.jacob@icloud.com'
 
   def send_simulation_email
     @simulation = params[:simulation]
