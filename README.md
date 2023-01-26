@@ -18,4 +18,5 @@ bin/rails s
 ## Used Libraries
 
 To send emails : [Sendgrid](https://sendgrid.com)
+
 To run HTTP requests : [Typhoeus](https://github.com/typhoeus/typhoeus)
