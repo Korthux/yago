@@ -13,3 +13,9 @@ bin/rails s
 4. The interactor call the profession advice helper to receive infos depending of the profession.
 5. The interactor call the insurance via API with Typhoeus.
 6. When the user click on the button, the controller is called to send an email via the mailer with sendgrip which is a SMTP service.
+
+
+## Used Libraries
+
+To send emails : [Sendgrid](https://sendgrid.com)
+To run HTTP requests : [Typhoeus](https://github.com/typhoeus/typhoeus)
