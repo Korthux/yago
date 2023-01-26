@@ -36,24 +36,14 @@ module CoverPropositions
         "coverageCeilingFormula": advice_helper.coverage_ceiling_formula
       }
       @result = insurance_api.get_quote(params)
-
-      puts("result")
-      puts(@result["data"])
       data = @result["data"]
-      coverPremiums= {
-        afterDelivery: 53.00,
-        publicLiability: 150.00,
-        professionalIndemnity: 270.00,
-        entrustedObjects: 12.92,
-        legalExpenses: 20.87,
-      }
+
       @result_covers = {
         "cover_premiums": data["grossPremiums"],
         "coverage_ceiling": data["coverageCeiling"],
         "deductible": data["deductible"],
         "cover_advice": @advice_helper.cover
       }
-      puts(@result_covers)
       @result_covers
     end
 
