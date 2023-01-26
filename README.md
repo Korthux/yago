@@ -20,3 +20,5 @@ bin/rails s
 To send emails : [Sendgrid](https://sendgrid.com)
 
 To run HTTP requests : [Typhoeus](https://github.com/typhoeus/typhoeus)
+
+To have more flexible code : [Dry-rb](https://dry-rb.org)
