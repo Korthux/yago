@@ -22,3 +22,5 @@ To send emails : [Sendgrid](https://sendgrid.com)
 To run HTTP requests : [Typhoeus](https://github.com/typhoeus/typhoeus)
 
 To have more flexible code : [Dry-rb](https://dry-rb.org)
+
+For tests : [Rspec](https://github.com/rspec/rspec-rails/tree/6-0-maintenance)
