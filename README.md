@@ -1,7 +1,7 @@
 # README
 * Documentation
 
-[yago_dia.drawio.pdf](https://github.com/Korthux/yago/files/10509640/yago_dia.drawio.pdf)
+![Diagramme sans nom drawio](https://user-images.githubusercontent.com/56258172/214846581-5ccffbb0-3f32-41c7-952a-f53431821059.png)
 
 1. The infos of the form are send to the simulation controller.
 2. The action call the the simulation creation interactor where logic is to create the simulation active record.
