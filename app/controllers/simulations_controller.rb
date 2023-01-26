@@ -7,7 +7,7 @@ class SimulationsController < ApplicationController
   def create
     interactor = ::Simulations::Create.new(params: simulation_params.to_h)
     simulation = interactor.call
-    if simulation.save
+    if simulation.valid?
       redirect_to :action => "show", :id => simulation.id
     else
       render :new

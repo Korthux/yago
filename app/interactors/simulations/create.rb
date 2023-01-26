@@ -10,6 +10,7 @@ module Simulations
 
     def create_simulation
       @simulation = Simulation.new(params)
+      @simulation.save
     end
 
     def expose_simulation
