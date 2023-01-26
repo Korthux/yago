@@ -1,6 +1,10 @@
 # README
-* Documentation
-
+## How to run the app ?
+Run the following command in the root of the project :
+```bash
+bin/rails s
+```
+## Diagram
 ![Diagramme sans nom drawio-2](https://user-images.githubusercontent.com/56258172/214846697-3139a110-6071-4a07-bab8-46652c931d3f.png)
 
 1. The infos of the form are send to the simulation controller.
