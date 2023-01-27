@@ -1,5 +1,6 @@
 ## Technos
 Ruby
+
 Postgresql db
 ## How to run the app ?
 Run the following command in the root of the project :
