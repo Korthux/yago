@@ -26,25 +26,19 @@ module CoverPropositions
 
     def get_covers
       insurance_api = ::InsuranceApi.new
-      params = {
-        "annualRevenue": simulation.annual_revenue,
-        "enterpriseNumber": simulation.enterprise_number,
-        "legalName": simulation.legal_name,
-        "naturalPerson": simulation.natural_person,
-        "nacebelCodes": @nace_bel_codes,
-        "deductibleFormula": advice_helper.deductible_formula,
-        "coverageCeilingFormula": advice_helper.coverage_ceiling_formula
-      }
-      @result = insurance_api.get_quote(params)
-      data = @result["data"]
+      @result = insurance_api.get_quote(simulation.id, advice_helper, @nace_bel_codes)
 
+      data = @result["data"]
       @result_covers = {
         "cover_premiums": data["grossPremiums"],
         "coverage_ceiling": data["coverageCeiling"],
         "deductible": data["deductible"],
-        "cover_advice": @advice_helper.cover
+        "cover_advice": advice_helper.cover
       }
+
       @result_covers
+    rescue StandardError => error
+      fail!(error.message)
     end
 
     def advice_helper
